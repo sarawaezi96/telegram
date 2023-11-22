@@ -119,7 +119,7 @@ class newcontacts extends StatelessWidget {
                         ),
                       ),
                     ],
-                  )
+                  ),
                 ],
               ),
             ),
