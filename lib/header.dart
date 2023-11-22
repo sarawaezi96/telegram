@@ -145,30 +145,37 @@ class Header extends StatelessWidget {
                   title: "Victoria",
                   description: "Yes, they are necessary",
                 ),
+                Divider(),
                 MyWidget(
                   title: "Telegram Support",
                   description: "New Login Detected",
                 ),
+                Divider(),
                 MyWidget(
                   title: "Eliza",
                   description: "Okay",
                 ),
+                Divider(),
                 MyWidget(
                   title: "Telegram Contests",
                   description: "Clarifications for participants of..",
                 ),
+                Divider(),
                 MyWidget(
                   title: "Albert Flores",
                   description: "Bye",
                 ),
+                Divider(),
                 MyWidget(
                   title: "Kristin",
                   description: "Thanks ❤️",
                 ),
+                Divider(),
                 MyWidget(
                   title: "Kristin",
                   description: "Thanks ❤️",
                 ),
+                Divider(),
                 MyWidget(
                   title: "Kristin",
                   description: "Thanks ❤️",
