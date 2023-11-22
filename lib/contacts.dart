@@ -77,26 +77,32 @@ class Contacts extends StatelessWidget {
                   title: "Kristin Watson",
                   description: "last seen recently",
                 ),
+                Divider(),
                 MyWidget(
                   title: "Courtney Henry",
                   description: "last seen recently",
                 ),
+                Divider(),
                 MyWidget(
                   title: "Devon Lane",
                   description: "last seen recently",
                 ),
+                Divider(),
                 MyWidget(
                   title: "Robert Fox",
                   description: "last seen recently",
                 ),
+                Divider(),
                 MyWidget(
                   title: "Kristin Watson",
                   description: "last seen recently",
                 ),
+                Divider(),
                 MyWidget(
                   title: "Floyd Miles",
                   description: "last seen recently",
                 ),
+                Divider(),
                 MyWidget(
                   title: "Jane Cooper",
                   description: "last seen recently",
