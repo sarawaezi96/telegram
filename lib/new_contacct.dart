@@ -68,6 +68,9 @@ class newcontacts extends StatelessWidget {
                           ),
                         ),
                       ),
+                      SizedBox(
+                        width: 30,
+                      ),
                       Expanded(
                         child: TextField(
                           decoration: InputDecoration(

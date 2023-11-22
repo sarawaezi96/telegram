@@ -83,6 +83,9 @@ class EditPorofile extends StatelessWidget {
                           ),
                         ),
                       ),
+                      SizedBox(
+                        width: 20,
+                      ),
                       Expanded(
                         child: TextField(
                           decoration: InputDecoration(
@@ -113,9 +116,27 @@ class EditPorofile extends StatelessWidget {
                   ),
                   tanzimat("Phone number", "+98 911 682 8684", "Change"),
                   SizedBox(
-                    height: 30,
+                    height: 15,
                   ),
                   tanzimat("Phone number", "@mojtabatn", "Change"),
+                  SizedBox(
+                    height: 45,
+                  ),
+                  Container(
+                    width: double.infinity,
+                    height: 60,
+                    color: Color(0xffEDEDED),
+                    child: Center(
+                      child: Text(
+                        "Log out",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 16,
+                          color: Color(0xffE14D4D),
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -146,7 +167,9 @@ tanzimat(String title, String description, String text) {
                   color: Color(0xff838383),
                 ),
               ),
-              SizedBox(height: 7,),
+              SizedBox(
+                height: 7,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
