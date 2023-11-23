@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppButton extends StatelessWidget {
   String title;
-  // VoidCallback onTap;
+
   AppButton({
     this.title = 'Button',
   });
@@ -10,7 +10,6 @@ class AppButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      // onTap: onTap,
       child: Column(
         children: [
           Container(
@@ -118,7 +117,6 @@ class Chates extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        
         Icon(
           icon,
           color: Color(0xff3290EC),

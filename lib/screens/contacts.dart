@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/bot.dart';
-import 'package:flutter_application_1/widget.dart';
+import 'package:flutter_application_1/widget/bot.dart';
+import 'package:flutter_application_1/widget/widget.dart';
 
 class Contacts extends StatelessWidget {
   const Contacts({super.key});
@@ -34,32 +34,35 @@ class Contacts extends StatelessWidget {
                       ],
                     ),
                     SizedBox(
-                      height: 15,
+                      height: 10,
                     ),
                     Chates(
                       icon: Icons.location_on,
                       title: "Find People Nearby",
                     ),
-                    SizedBox(
-                      height: 15,
+                    Divider(
+                      color: Color(0xff838383),
                     ),
                     Chates(
                       icon: Icons.contacts,
                       title: "Contact Categories",
                     ),
-                    SizedBox(
-                      height: 15,
+                    Divider(
+                      color: Color(0xff838383),
                     ),
                     Chates(
                       icon: Icons.contact_page_sharp,
                       title: "Add New Contact",
                     ),
-                    SizedBox(
-                      height: 15,
+                    Divider(
+                      color: Color(0xff838383),
                     ),
                     Chates(
                       icon: Icons.add,
                       title: "Invite Friends",
+                    ),
+                    Divider(
+                      color: Color(0xff838383),
                     ),
                   ],
                 ),
@@ -77,32 +80,44 @@ class Contacts extends StatelessWidget {
                   title: "Kristin Watson",
                   description: "last seen recently",
                 ),
-                Divider(),
+                Divider(
+                  color: Color(0xff838383),
+                ),
                 MyWidget(
                   title: "Courtney Henry",
                   description: "last seen recently",
                 ),
-                Divider(),
+                Divider(
+                  color: Color(0xff838383),
+                ),
                 MyWidget(
                   title: "Devon Lane",
                   description: "last seen recently",
                 ),
-                Divider(),
+                Divider(
+                  color: Color(0xff838383),
+                ),
                 MyWidget(
                   title: "Robert Fox",
                   description: "last seen recently",
                 ),
-                Divider(),
+                Divider(
+                  color: Color(0xff838383),
+                ),
                 MyWidget(
                   title: "Kristin Watson",
                   description: "last seen recently",
                 ),
-                Divider(),
+                Divider(
+                  color: Color(0xff838383),
+                ),
                 MyWidget(
                   title: "Floyd Miles",
                   description: "last seen recently",
                 ),
-                Divider(),
+                Divider(
+                  color: Color(0xff838383),
+                ),
                 MyWidget(
                   title: "Jane Cooper",
                   description: "last seen recently",

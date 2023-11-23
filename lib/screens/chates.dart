@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/bot.dart';
-import 'package:flutter_application_1/widget.dart';
+import 'package:flutter_application_1/widget/bot.dart';
+import 'package:flutter_application_1/widget/widget.dart';
 
-class Header extends StatelessWidget {
-  const Header({super.key});
+class Chats extends StatelessWidget {
+  const Chats({super.key});
 
   @override
   Widget build(BuildContext context) {
