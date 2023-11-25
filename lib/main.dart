@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/private_chat/private_chat.dart';
 import 'package:flutter_application_1/screens/Edit_porofil.dart';
 import 'package:flutter_application_1/screens/contacts.dart';
 import 'package:flutter_application_1/screens/chates.dart';
@@ -25,7 +26,8 @@ class MyWidget extends StatelessWidget {
 // home: Setting (),
 // home: EditPorofile (),
 // home: FreeUser(),
-     home: PremiumUser(),
+
+      home: PrivateChat(),
     );
   }
 }
