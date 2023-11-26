@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/private_chat/not_accepted.dart';
 import 'package:flutter_application_1/private_chat/private_chat.dart';
 import 'package:flutter_application_1/screens/Edit_porofil.dart';
 import 'package:flutter_application_1/screens/contacts.dart';
@@ -6,6 +7,7 @@ import 'package:flutter_application_1/screens/chates.dart';
 import 'package:flutter_application_1/screens/new_contacct.dart';
 import 'package:flutter_application_1/setting/setting.dart';
 import 'package:flutter_application_1/user/free_user.dart';
+
 import 'package:flutter_application_1/user/premium_user.dart';
 
 void main() {
@@ -26,8 +28,8 @@ class MyWidget extends StatelessWidget {
 // home: Setting (),
 // home: EditPorofile (),
 // home: FreeUser(),
-
-      home: PrivateChat(),
+      // home: PrivateChat(),
+      home: NotAccepted(),
     );
   }
 }
