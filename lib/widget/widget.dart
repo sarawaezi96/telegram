@@ -137,3 +137,64 @@ class Chates extends StatelessWidget {
     );
   }
 }
+
+class profileWidget extends StatelessWidget {
+  const profileWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        TextField(
+          decoration: InputDecoration(
+            labelText: "Bio",
+            helperStyle: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w400,
+              color: Color(0xff838383),
+            ),
+          ),
+        ),
+        SizedBox(height: 5),
+        TextField(
+          decoration: InputDecoration(
+            labelText: "Username",
+            helperStyle: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w400,
+              color: Color(0xff838383),
+            ),
+          ),
+        ),
+        SizedBox(height: 10),
+        TextField(
+          decoration: InputDecoration(
+            hintText: "Notifications",
+            helperStyle: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w400,
+              color: Color(838383),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class TabProfile extends StatelessWidget {
+  String title;
+  TabProfile({this.title = ""});
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      "title",
+      style: TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.w400,
+        color: Color(0xff838383),
+      ),
+    );
+  }
+}
