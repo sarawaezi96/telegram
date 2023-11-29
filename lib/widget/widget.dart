@@ -182,19 +182,4 @@ class profileWidget extends StatelessWidget {
   }
 }
 
-class TabProfile extends StatelessWidget {
-  String title;
-  TabProfile({this.title = ""});
 
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      "title",
-      style: TextStyle(
-        fontSize: 14,
-        fontWeight: FontWeight.w400,
-        color: Color(0xff838383),
-      ),
-    );
-  }
-}

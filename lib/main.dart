@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/private_chat/not_accepted.dart';
 import 'package:flutter_application_1/private_chat/private_chat.dart';
 import 'package:flutter_application_1/private_chat/without%20_topics.dart';
+import 'package:flutter_application_1/private_chat/without.dart';
 import 'package:flutter_application_1/profile/edit_porofil.dart';
 import 'package:flutter_application_1/profile/profile.dart';
 import 'package:flutter_application_1/screens/contacts.dart';
@@ -30,8 +31,9 @@ class MyWidget extends StatelessWidget {
 // home: EditPorofile (),
 // home: FreeUser(),
 // home: PrivateChat(),
- home: Profile(),
+//  home: Profile(),
 //  home: WithoutTopice(),
+      home: Without(),
     );
   }
 }
