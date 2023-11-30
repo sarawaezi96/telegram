@@ -182,4 +182,26 @@ class profileWidget extends StatelessWidget {
   }
 }
 
+class Notifications extends StatelessWidget {
+  const Notifications({super.key});
 
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Text(
+          "Notifications",
+          style: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+        Spacer(),
+        Switch(
+          value: false,
+          onChanged: (value) {},
+        ),
+      ],
+    );
+  }
+}

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/channel_admin/channel_admin.dart';
+import 'package:flutter_application_1/channel_admin/channel_admin2.dart';
 import 'package:flutter_application_1/private_chat/not_accepted.dart';
 import 'package:flutter_application_1/private_chat/private_chat.dart';
 import 'package:flutter_application_1/private_chat/with_toplc2.dart';
@@ -26,18 +27,19 @@ class MyWidget extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
 
-//home: Chats (),
-//home: Contacts (),
-//home: NewContacts (),
+// home: Chats (),
+// home: Contacts (),
+// home: NewContacts (),
 //home: Setting (),
-//home: EditPorofile (),
-//home: FreeUser(),
-//home: PrivateChat(),
-//home: Profile(),
-//home: WithoutTopice(),
-//home: Without(),
+// home: EditPorofile (),
+// home: FreeUser(),
+// home: PrivateChat(),
+// home: Profile(),
+// home: WithoutTopice(),
+// home: Without(),
 //home: WithTopics2(),
-home: ChannelAdminSide(),
+// home: ChannelAdminSide(),
+  home: ChannelAddmin2(),
     );
   }
 }

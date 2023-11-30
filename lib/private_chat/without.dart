@@ -10,21 +10,11 @@ class Without extends StatefulWidget {
 
 class _WithoutState extends State<Without> with SingleTickerProviderStateMixin {
   List<Tab> tabs = [
-    Tab(
-      text: "Members",
-    ),
-    Tab(
-      text: "Media",
-    ),
-    Tab(
-      text: "Files",
-    ),
-    Tab(
-      text: "Voice",
-    ),
-    Tab(
-      text: "Links",
-    ),
+    Tab(text: "Members"),
+    Tab(text: "Media"),
+    Tab(text: "Files"),
+    Tab(text: "Voice"),
+    Tab(text: "Links"),
   ];
   late TabController controller;
 
@@ -48,28 +38,20 @@ class _WithoutState extends State<Without> with SingleTickerProviderStateMixin {
                 children: [
                   Row(
                     children: [
-                      Icon(
-                        Icons.arrow_back_outlined,
-                        color: Color(0xff838383),
-                      ),
+                      Icon(Icons.arrow_back_outlined, color: Color(0xff838383)),
                       Spacer(),
-                      Icon(
-                        Icons.call,
-                        color: Color(0xff838383),
-                      ),
+                      Icon(Icons.call, color: Color(0xff838383)),
                       SizedBox(width: 10),
-                      Icon(
-                        Icons.more_vert,
-                        color: Color(0xff838383),
-                      ),
+                      Icon(Icons.more_vert, color: Color(0xff838383)),
                     ],
                   ),
                   Container(
                     width: 100,
                     height: 100,
                     decoration: BoxDecoration(
-                        color: Color(0xff838383),
-                        borderRadius: BorderRadius.circular(100)),
+                      color: Color(0xff838383),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
                   ),
                   SizedBox(height: 10),
                   Text(

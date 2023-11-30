@@ -91,10 +91,7 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
                   profileWidget(),
                   Spacer(),
                   TabBar(
-                    // indicator: BoxDecoration(
-                    //   color: Color(0xff3290EC),
-                    // ),
-                    dividerColor: Color(0xff334D8F),
+                    labelColor: Color(0xff3290EC),
                     unselectedLabelColor: Color(0xff334D8F),
                     controller: controller,
                     tabs: tabs,
