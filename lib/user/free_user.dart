@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/user/premium_user.dart';
 import 'package:flutter_application_1/widget/bot.dart';
 
 class FreeUser extends StatelessWidget {
@@ -19,12 +20,24 @@ class FreeUser extends StatelessWidget {
                   padding: const EdgeInsets.all(10.0),
                   child: Column(
                     children: [
-                      Text(
-                        'Telegram Premium',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w600,
-                          color: Color(0xff0000000),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 210),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => PremiumUser(),
+                              ),
+                            );
+                          },
+                          child: Text(
+                            'Telegram Premium',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w600,
+                              color: Color(0xff0000000),
+                            ),
+                          ),
                         ),
                       ),
                       SizedBox(

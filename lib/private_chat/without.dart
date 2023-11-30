@@ -38,7 +38,15 @@ class _WithoutState extends State<Without> with SingleTickerProviderStateMixin {
                 children: [
                   Row(
                     children: [
-                      Icon(Icons.arrow_back_outlined, color: Color(0xff838383)),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: Icon(
+                          Icons.arrow_back_outlined,
+                          color: Color(0xff838383),
+                        ),
+                      ),
                       Spacer(),
                       Icon(Icons.call, color: Color(0xff838383)),
                       SizedBox(width: 10),
@@ -152,7 +160,10 @@ not() {
               color: Color(0xff000000),
             ),
           ),
-          Icon(Icons.notifications_on_outlined),
+          Switch(
+            value: false,
+            onChanged: (value) {},
+          ),
         ],
       ),
       Divider(),

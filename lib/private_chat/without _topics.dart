@@ -19,9 +19,14 @@ class WithoutTopice extends StatelessWidget {
                   padding: const EdgeInsets.all(10.0),
                   child: Row(
                     children: [
-                      Icon(
-                        Icons.arrow_back_outlined,
-                        color: Color(0xff838383),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: Icon(
+                          Icons.arrow_back_outlined,
+                          color: Color(0xff838383),
+                        ),
                       ),
                       SizedBox(width: 10),
                       Container(

@@ -48,9 +48,14 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
                 children: [
                   Row(
                     children: [
-                      Icon(
-                        Icons.arrow_back_outlined,
-                        color: Color(0xff838383),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: Icon(
+                          Icons.arrow_back_outlined,
+                          color: Color(0xff838383),
+                        ),
                       ),
                       Spacer(),
                       Icon(

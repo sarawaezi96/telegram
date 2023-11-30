@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/profile/profile.dart';
+import 'package:flutter_application_1/user/premium_user.dart';
 import 'package:flutter_application_1/widget/bottom.dart';
 
 class PrivateChat extends StatelessWidget {
@@ -19,9 +21,14 @@ class PrivateChat extends StatelessWidget {
                   padding: const EdgeInsets.all(10.0),
                   child: Row(
                     children: [
-                      Icon(
-                        Icons.arrow_back_outlined,
-                        color: Color(0xff838383),
+                      GestureDetector(
+                       onTap: () {
+                         Navigator.of(context).pop();
+                       },
+                        child: Icon(
+                          Icons.arrow_back_outlined,
+                          color: Color(0xff838383),
+                        ),
                       ),
                       SizedBox(width: 10),
                       Container(
@@ -34,26 +41,35 @@ class PrivateChat extends StatelessWidget {
                       SizedBox(width: 15),
                       Padding(
                         padding: const EdgeInsets.only(top: 25),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Eliza",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
-                                color: Color(0xff000000),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => Profile(),
                               ),
-                            ),
-                            Text(
-                              "last seen recently",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
-                                color: Color(0xff838383),
+                            );
+                          },
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Eliza",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                  color: Color(0xff000000),
+                                ),
                               ),
-                            ),
-                          ],
+                              Text(
+                                "last seen recently",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                  color: Color(0xff838383),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       Spacer(),

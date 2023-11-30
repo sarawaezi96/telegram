@@ -28,12 +28,13 @@ class MyWidget extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
 
-// home: Chats (),
+home: Chats (),
 // home: Contacts (),
 // home: NewContacts (),
-//home: Setting (),
+// home: Setting (),
 // home: EditPorofile (),
 // home: FreeUser(),
+// home:  PremiumUser(),
 // home: PrivateChat(),
 // home: Profile(),
 // home: WithoutTopice(),
@@ -42,7 +43,7 @@ class MyWidget extends StatelessWidget {
 // home: ChannelAdminSide(),
 // home: ChannelAddmin2(),
       // home: StoriPage(),
-      home: StoriPage(),
+      // home: StoriPage(),
     );
   }
 }

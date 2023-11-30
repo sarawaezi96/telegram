@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/setting/setting.dart';
+import 'package:flutter_application_1/user/free_user.dart';
 
 class botom extends StatelessWidget {
   const botom({super.key});
@@ -8,7 +10,8 @@ class botom extends StatelessWidget {
     return BottomAppBar(
       child: Container(
         child: Padding(
-          padding: const EdgeInsets.only(left: 20,right: 20,bottom: 10,top: 15),
+          padding:
+              const EdgeInsets.only(left: 20, right: 20, bottom: 10, top: 15),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -46,9 +49,18 @@ class botom extends StatelessWidget {
               ),
               Column(
                 children: [
-                  Icon(
-                    Icons.settings,
-                    color: Color(0xff49454F),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => Setting(),
+                        ),
+                      );
+                    },
+                    child: Icon(
+                      Icons.settings,
+                      color: Color(0xff49454F),
+                    ),
                   ),
                   Text(
                     "Settings",
@@ -62,9 +74,15 @@ class botom extends StatelessWidget {
               ),
               Column(
                 children: [
-                  Icon(
-                    Icons.workspace_premium,
-                    color: Color(0xff49454F),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => FreeUser()));
+                    },
+                    child: Icon(
+                      Icons.workspace_premium,
+                      color: Color(0xff49454F),
+                    ),
                   ),
                   Text(
                     "Premium",

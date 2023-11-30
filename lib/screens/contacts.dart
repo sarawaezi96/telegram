@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/new_contacct.dart';
 import 'package:flutter_application_1/widget/bot.dart';
 import 'package:flutter_application_1/widget/widget.dart';
 
@@ -50,9 +51,18 @@ class Contacts extends StatelessWidget {
                     Divider(
                       color: Color(0xff838383),
                     ),
-                    Chates(
-                      icon: Icons.contact_page_sharp,
-                      title: "Add New Contact",
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => NewContacts(),
+                          ),
+                        );
+                      },
+                      child: Chates(
+                        icon: Icons.contact_page_sharp,
+                        title: "Add New Contact",
+                      ),
                     ),
                     Divider(
                       color: Color(0xff838383),

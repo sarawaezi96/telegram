@@ -224,21 +224,25 @@ Integrations(String title, String description, String text, IconData icon) {
       padding: const EdgeInsets.all(10.0),
       child: Row(
         children: [
-          Container(
-            width: 30,
-            height: 30,
-            decoration: BoxDecoration(
-              color: Color(0xff3290EC),
-              borderRadius: BorderRadius.circular(35),
-            ),
-          ),
-          Container(
-            width: 30,
-            height: 30,
-            decoration: BoxDecoration(
-              color: Color(0xffF964FF),
-              borderRadius: BorderRadius.circular(35),
-            ),
+          Stack(
+            children: [
+              Container(
+                width: 40,
+                height: 40,
+                decoration: BoxDecoration(
+                  color: Color(0xff3290EC),
+                  borderRadius: BorderRadius.circular(35),
+                ),
+              ),
+              Container(
+                width: 30,
+                height: 30,
+                decoration: BoxDecoration(
+                  color: Color(0xffF964FF),
+                  borderRadius: BorderRadius.circular(35),
+                ),
+              ),
+            ],
           ),
           SizedBox(
             width: 20,

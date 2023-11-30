@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/private_chat/private_chat.dart';
+import 'package:flutter_application_1/private_chat/without%20_topics.dart';
+import 'package:flutter_application_1/private_chat/without.dart';
+import 'package:flutter_application_1/screens/contacts.dart';
 import 'package:flutter_application_1/widget/bot.dart';
 import 'package:flutter_application_1/widget/widget.dart';
 
@@ -30,9 +34,18 @@ class Chats extends StatelessWidget {
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-                        Icon(
-                          Icons.search,
-                          color: Color(0xff838383),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => Contacts(),
+                              ),
+                            );
+                          },
+                          child: Icon(
+                            Icons.search,
+                            color: Color(0xff838383),
+                          ),
                         ),
                       ],
                     ),
@@ -141,9 +154,18 @@ class Chats extends StatelessWidget {
           body: SingleChildScrollView(
             child: Column(
               children: [
-                MyWidget(
-                  title: "Victoria",
-                  description: "Yes, they are necessary",
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => WithoutTopice(),
+                      ),
+                    );
+                  },
+                  child: MyWidget(
+                    title: "Victoria",
+                    description: "Yes, they are necessary",
+                  ),
                 ),
                 Divider(),
                 MyWidget(
@@ -151,9 +173,18 @@ class Chats extends StatelessWidget {
                   description: "New Login Detected",
                 ),
                 Divider(),
-                MyWidget(
-                  title: "Eliza",
-                  description: "Okay",
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => PrivateChat(),
+                      ),
+                    );
+                  },
+                  child: MyWidget(
+                    title: "Eliza",
+                    description: "Okay",
+                  ),
                 ),
                 Divider(),
                 MyWidget(
@@ -186,7 +217,16 @@ class Chats extends StatelessWidget {
           bottomNavigationBar: botom(),
           floatingActionButton: FloatingActionButton(
             onPressed: () {},
-            child: Icon(Icons.add),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => Without(),
+                  ),
+                );
+              },
+              child: Icon(Icons.add),
+            ),
           ),
           backgroundColor: Colors.white,
         ),

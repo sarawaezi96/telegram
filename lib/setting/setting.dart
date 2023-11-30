@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/profile/edit_porofil.dart';
+import 'package:flutter_application_1/screens/contacts.dart';
 import 'package:flutter_application_1/widget/bot.dart';
 
 class Setting extends StatelessWidget {
@@ -29,12 +31,21 @@ class Setting extends StatelessWidget {
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-                        Text(
-                          "Edit",
-                          style: TextStyle(
-                            color: Color(0xff3290EC),
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => EditPorofile(),
+                              ),
+                            );
+                          },
+                          child: Text(
+                            "Edit",
+                            style: TextStyle(
+                              color: Color(0xff3290EC),
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                            ),
                           ),
                         ),
                       ],
