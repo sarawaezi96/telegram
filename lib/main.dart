@@ -12,6 +12,7 @@ import 'package:flutter_application_1/screens/contacts.dart';
 import 'package:flutter_application_1/screens/chates.dart';
 import 'package:flutter_application_1/screens/new_contacct.dart';
 import 'package:flutter_application_1/setting/setting.dart';
+import 'package:flutter_application_1/storipage/stori_page.dart';
 import 'package:flutter_application_1/user/free_user.dart';
 import 'package:flutter_application_1/user/premium_user.dart';
 
@@ -39,7 +40,9 @@ class MyWidget extends StatelessWidget {
 // home: Without(),
 //home: WithTopics2(),
 // home: ChannelAdminSide(),
-  home: ChannelAddmin2(),
+// home: ChannelAddmin2(),
+      // home: StoriPage(),
+      home: StoriPage(),
     );
   }
 }
