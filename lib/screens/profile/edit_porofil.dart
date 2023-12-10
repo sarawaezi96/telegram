@@ -45,7 +45,7 @@ class EditPorofile extends StatelessWidget {
                       height: 80,
                       decoration: BoxDecoration(
                           color: Color(0xff838383),
-                          borderRadius: BorderRadius.circular(80)),
+                          borderRadius: BorderRadius.circular(80),),
                     ),
                     SizedBox(
                       height: 15,

@@ -73,8 +73,9 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
                     width: 100,
                     height: 100,
                     decoration: BoxDecoration(
-                        color: Color(0xff838383),
-                        borderRadius: BorderRadius.circular(100)),
+                      color: Color(0xff838383),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
                   ),
                   SizedBox(height: 10),
                   Text(
@@ -108,7 +109,7 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
           preferredSize: Size(double.infinity, 470),
         ),
         body: TabBarView(
-          controller: controller,
+          controller: controller,                                           
           children: [
             postes(),
             media(),

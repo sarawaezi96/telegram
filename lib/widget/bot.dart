@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/setting/setting.dart';
-import 'package:flutter_application_1/user/free_user.dart';
+import 'package:flutter_application_1/screens/user/free_user.dart';
 
 class botom extends StatelessWidget {
   const botom({super.key});

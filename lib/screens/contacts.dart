@@ -10,7 +10,7 @@ class Contacts extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: SafeArea(
-        child: Scaffold(
+        child: Scaffold( 
           appBar: PreferredSize(
             child: Container(
               child: Padding(

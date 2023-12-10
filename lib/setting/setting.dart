@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/profile/edit_porofil.dart';
+import 'package:flutter_application_1/screens/profile/edit_porofil.dart';
 import 'package:flutter_application_1/screens/contacts.dart';
 import 'package:flutter_application_1/widget/bot.dart';
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/profile/profile.dart';
-import 'package:flutter_application_1/user/premium_user.dart';
+import 'package:flutter_application_1/screens/profile/profile.dart';
+import 'package:flutter_application_1/screens/user/premium_user.dart';
 import 'package:flutter_application_1/widget/bottom.dart';
-import 'package:flutter_application_1/widget/chat.dart';
-import 'package:flutter_application_1/widget/chates.dart';
+import 'package:flutter_application_1/model/chatmodel.dart';
+import 'package:flutter_application_1/model/chates.dart';
 import 'package:flutter_application_1/widget/widget.dart';
 
 class PrivateChat extends StatefulWidget {
